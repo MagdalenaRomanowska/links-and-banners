@@ -1,0 +1,70 @@
+/* sidebar */
+
+.left {
+  position: fixed;
+  max-width: 178px;
+  height: 100%;
+  float: left;
+  background: rgb(26, 26, 26);
+}
+
+.menu-row {
+  display: inline-flex;
+  max-width: 178px;
+}
+
+.links-in-row {
+  display: inline-flex;
+  min-width: 178px;
+}
+
+.links-in-row:hover {
+  background-color: rgb(58, 58, 58);
+  border-left: 4px solid orange;
+  height: 40px;
+}
+
+/* manager */
+
+.manager {
+  display: inline;
+}
+
+/* top */
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  position: fixed;
+  margin-left: 178px;
+  width: 60%;
+  min-height: 60px;
+  background: white;
+}
+
+/* main */
+
+.main {
+  position: absolute;
+  margin-left: 178px;
+  margin-top: 60px;
+  float: left;
+  min-height: 100%;
+  width: 60%;
+  background: rgb(226, 226, 226);
+}
+
+.main-wrapper {
+  padding: 20px;
+}
+
+.main-inner {
+  float: left;
+  height: 2000px;
+  width: 100%;
+  
+}
+
