@@ -1,70 +1,83 @@
-/* sidebar */
-
-.left {
-  position: fixed;
-  max-width: 178px;
-  height: 100%;
-  float: left;
-  background: rgb(26, 26, 26);
+* {
+  box-sizing: border-box;
 }
 
-.menu-row {
-  display: inline-flex;
-  max-width: 178px;
-}
-
-.links-in-row {
-  display: inline-flex;
-  min-width: 178px;
-}
-
-.links-in-row:hover {
-  background-color: rgb(58, 58, 58);
-  border-left: 4px solid orange;
-  height: 40px;
-}
-
-/* manager */
-
-.manager {
-  display: inline;
-}
-
-/* top */
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.top {
-  position: fixed;
-  margin-left: 178px;
-  width: 60%;
-  min-height: 60px;
-  background: white;
-}
-
-/* main */
-
-.main {
-  position: absolute;
-  margin-left: 178px;
-  margin-top: 60px;
-  float: left;
-  min-height: 100%;
-  width: 60%;
-  background: rgb(226, 226, 226);
-}
-
-.main-wrapper {
-  padding: 20px;
-}
-
-.main-inner {
-  float: left;
-  height: 2000px;
+.container {
+  background-color: rgb(200, 200, 200);
   width: 100%;
-  
+  max-width: 1170px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  padding: 0;
 }
 
+.container-fluid-left-menu {
+  padding-left: 0;
+}
+
+.container-fluid-right-top {
+  margin-left: -15px;
+}
+
+.row .top {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.container-fluid-right-main {
+  margin: 16px 0;
+}
+
+.hidden-on-phones-part { //top
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    $width: 100% / 12 * $i;
+
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}
+
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
+
+// /* main */
+
+.general-statistics,
+.links {
+  box-shadow: 0 0 5px 5px rgb(139, 139, 139);
+}
+
+.links {
+  margin-top: 32px;
+}
+
+@media (max-width: 767px) {
+  @include grid('sm');
+}
+
+@media (min-width: 768px) {
+  @include grid('md');
+}
+
+@media (min-width: 992px) {
+  @include grid('lg');
+}
+
+@media (min-width: 1200px) {
+  @include grid('xl');
+}

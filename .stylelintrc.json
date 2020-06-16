@@ -19,6 +19,9 @@
       "ignore": ["after-comment"]
     } ],
     "unit-whitelist": null,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "for"]
+    }],
     
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/no-duplicate-dollar-variables": true

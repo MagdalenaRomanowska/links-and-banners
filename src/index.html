@@ -2,69 +2,42 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <title>index -Links & Banners</title>
       <link href="https://fonts.googleapis.com/css2?family=Hind&family=Sedgwick+Ave&display=swap" rel="stylesheet">
       <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="registration-form-template">
     <div class="container">
-      <section class="top">
-        <div class="row">
-          <div class="box empty"></div>
-          <div class="box money">
-            <div class="box-img">
-              <img src="images/icons/wallet.svg" alt="wallet">
-            </div>
-            <div class="money-amount">
-              <h3>$1,500.00</h3>
-            </div>
-            <div class="box-img">
-              <img src="images/icons/arrow-down-small.svg" alt="arrow-down">
-            </div>
-          </div>
-          <div class="box notification">
-            <img src="images/icons/notification.svg" alt="notification">
-            <div class="orange-dot"></div>
-          </div>
-          <div class="box user">
-            <div class="box-img">
-              <img src="images/icons/profile.svg" alt="profile">
-            </div>
-            <div class="profile-name">
-              <h4>Leonardo Dicaprio</h4>
-            </div>
-          </div>
-          <div class="box quit">
-            <img src="images/icons/quit.svg" alt="quit">
-          </div>
-        </div>  
-      </section>
-      <section class="left"> 
-        <div class="left-nav">
+      <div class="container-fluid-left-menu col-lg-2 d-lg-block">
+        <div class="left-nav left">  <!-- LEFT SIDEBAR -->
           <div class="menu-row">
-            <p>&nbsp Just do it &nbsp</p>
-            <i class="fas fa-bars"></i>
+            <p class="col-10">&nbsp Just do it &nbsp</p>
+            <i class="fas fa-bars col-2"></i>
           </div>
           <div class="links-left-side">
             <div class="links-in-row">
               <img src="images/icons/general.svg" alt="General"><a href="#general">General</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/details.svg" alt="Details"><a href="#details">Details</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/links.svg" alt="Links"><a href="#links">Links</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/banners.svg" alt="Banners"><a href="#banners">Banners</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/personaldata.svg" alt="personaldata"><a href="#personal-data">Personal data</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/payout.svg" alt="payout"><a href="#payout">Payout</a>
-            </div><br>
+            </div>
             <div class="links-in-row">
               <img src="images/icons/postback.svg" alt="postback"><a href="#postback">Postback</a>
             </div> 
@@ -77,79 +50,278 @@
               <h5>Mikhael E.</h5>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="main"> 
-        <div class="main-wrapper">
-          <div class="main-inner">
-            <div class="general-statistics">
-              <div class="general title"><h2>GENERAL STATISTICS</h2>
-              </div>
-              <div class="general dates">
-                <div class="dates-table">
-                  <h3>16.05.2016</h3>
-                  <div class="line-between-dates"></div>
-                  <h3>16.05.2016</h3>
-                  <div class="calendar-icon">
-                    <img src="images/icons/calendar.svg" alt="calendar">
-                  </div>
+          <div class="hide-on-larger-than-phones d-lg-none">
+            <div class="hidden-on-larger-than-phones-part">
+              <div class="box money">
+                <div class="box-img">
+                  <img src="images/icons/wallet.svg" alt="wallet" class="hover">
                 </div>
-                <div class="refresh-icon">
-                  <img src="images/icons/refresh.svg" alt="refresh">
+                <div class="money-amount">
+                  <h4>$1,500.00</h4>
+                </div>
+                <div class="box-img">
+                  <img src="images/icons/arrow-down-small.svg" alt="arrow-down" class="hover">
                 </div>
               </div>
-              <div class="general visit">
-                <div class="visit-table">
-                  <div class="visit-row">
-                    <div class="visit-cell">
-                      <div class="text">
-                        <div class="first-text"><h2>Visit Signups</h2></div>
-                        <div class="second-text"><h5>124</h5></div>
-                      </div>
-                    </div>
-                    <div class="visit-cell">
-                      <div class="text">
-                        <div class="first-text"><h2>Net deposit</h2></div>
-                        <div class="second-text"><h5>564</h5></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="visit-row">
-                    <div class="visit-cell">
-                      <div class="text">
-                        <div class="first-text"><h2>FTD</h2></div>
-                        <div class="second-text"><h5>445</h5></div>
-                      </div>
-                    </div>
-                    <div class="visit-cell">
-                      <div class="text">
-                        <div class="first-text"><h2>Turn over</h2></div>
-                        <div class="second-text"><h5>432</h5></div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="box notification">
+                <img src="images/icons/notification.svg" alt="notification" class="hover">
+                <div class="orange-dot"></div>
+              </div>
+              <div class="box user">
+                <div class="box-img">
+                  <img src="images/icons/profile.svg" alt="profile" class="hover">
+                </div>
+                <div class="profile-name">
+                  <h5>Leonardo Dicaprio</h5>
                 </div>
               </div>
-              <div class="general earnings"><h2>Earnings chart</h2></div>
-              <div class="general dots">
-                <div class="dot-one">
-                  <div class="dot blue"></div>
-                  <h2>Signups</h2>
-                </div>
-                <div class="dot-two">
-                  <div class="dot orange"></div>
-                  <h2>FTD</h2>
-                </div>
-                <div class="dot-three">
-                  <div class="dot green"></div>
-                  <h1>Earned</h1>
-                </div>
+              <div class="box quit">
+                <img src="images/icons/quit.svg" alt="quit" class="hover">
               </div>
-              <div class="general chart">ggg</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="container-fluid-right-menu col-sm-12 col-lg-10"> 
+        <div class="container-fluid-right-top"> <!-- TOP MENU -->
+          <div class="row top">
+            <div class="box empty">
+              <i class="fas fa-bars d-lg-none"></i>
+            </div>
+            <div class="hide-on-phones d-none d-lg-block">
+              <div class="hidden-on-phones-part">
+                <div class="box money">
+                  <div class="box-img">
+                    <img src="images/icons/wallet.svg" alt="wallet" class="hover">
+                  </div>
+                  <div class="money-amount">
+                    <h3>$1,500.00</h3>
+                  </div>
+                  <div class="box-img">
+                    <img src="images/icons/arrow-down-small.svg" alt="arrow-down" class="hover">
+                  </div>
+                </div>
+                <div class="box notification">
+                  <img src="images/icons/notification.svg" alt="notification" class="hover">
+                  <div class="orange-dot"></div>
+                </div>
+                <div class="box user">
+                  <div class="box-img">
+                    <img src="images/icons/profile.svg" alt="profile" class="hover">
+                  </div>
+                  <div class="profile-name">
+                    <h4>Leonardo Dicaprio</h4>
+                  </div>
+                </div>
+                <div class="box quit">
+                  <img src="images/icons/quit.svg" alt="quit" class="hover">
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="container-fluid-right-main main"> <!-- MAIN PAGE -->
+          <div class="general-statistics">
+            <div class="general title"><h2>GENERAL STATISTICS</h2>
+            </div>
+            <div class="general dates">              
+              <div class="dates-table">
+                <h3>16.05.2016</h3>
+                <div class="line-between-dates"></div>
+                <h3>16.05.2016</h3>
+                <div class="calendar-icon">
+                  <img src="images/icons/calendar.svg" alt="calendar" class="hover">
+                </div>
+              </div>
+              <div class="refresh-icon">
+                <img src="images/icons/refresh.svg" alt="refresh">
+              </div>
+            </div>
+            <div class="general visit">
+              <div class="visit-table">
+                <div class="visit-row">
+                  <div class="visit-cell left-cell">
+                    <div class="text">
+                      <div class="first-text"><h2>Visit Signups</h2></div>
+                      <div class="second-text"><h5>124</h5></div>
+                    </div>
+                  </div>
+                  <div class="visit-cell right-cell">
+                    <div class="text">
+                      <div class="first-text"><h2>Net deposit</h2></div>
+                      <div class="second-text"><h5>564</h5></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="visit-row">
+                  <div class="visit-cell left-cell">
+                    <div class="text">
+                      <div class="first-text"><h2>FTD</h2></div>
+                      <div class="second-text"><h5>445</h5></div>
+                    </div>
+                  </div>
+                  <div class="visit-cell right-cell">
+                    <div class="text">
+                      <div class="first-text"><h2>Turn over</h2></div>
+                      <div class="second-text"><h5>432</h5></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="general earnings"><h2>Earnings chart</h2></div>
+            <div class="general dots">              
+              <div class="dot-one color-dots">
+                <div class="dot blue"></div>
+                <div class="dot-text"><h2>Signups</h2></div>
+              </div>
+              <div class="dot-two color-dots">
+                <div class="dot orange"></div>
+                <h2>FTD</h2>
+              </div>
+              <div class="dot-three color-dots">
+                <div class="dot green"></div>
+                <h1>Earned</h1>
+              </div>
+            </div>
+            <div class="general chart">                
+              <img src="images/chart-main-page.jpg" alt="chart">
+            </div>
+          </div>
+          <div class="links">
+            <div class="links-title"><h2>LINKS</h2></div>
+            <div class="add-new">
+              <div class="add-new-button"><h4>+ add new</h4></div>
+            </div>
+            <div class="links-inner">
+              <div class="link-row">
+                <div class="link-name"><h2>Home page</h2></div>
+                <div class="link-address"><h1>http://homepage.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Currently offer</h2></div>
+                <div class="link-address"><h1>http://currently.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Blurpix</h2></div>
+                <div class="link-address"><h1>http://blurpix.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Your site</h2></div>
+                <div class="link-address"><h1>http://yoursite.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Google</h2></div>
+                <div class="link-address"><h1>http://google.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Facebook</h2></div>
+                <div class="link-address"><h1>http://facebook.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Dashboard</h2></div>
+                <div class="link-address"><h1>http://dashboard.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Blurax</h2></div>
+                <div class="link-address"><h1>http://blurax.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Piece of wine</h2></div>
+                <div class="link-address"><h1>http://pieceofwine.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+              <div class="link-row">
+                <div class="link-name"><h2>Twitter</h2></div>
+                <div class="link-address"><h1>http://twitter.com</h1></div>
+                <div class="icons">
+                  <div class="link-icon">
+                    <img src="images/icons/links.svg" alt="links" class="hidden orange-links">
+                  </div>
+                  <div class="trash-icon">
+                    <img src="images/icons/trash.svg" alt="trash" class="hidden">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="add-new">
+              <div class="add-new-button"><h4>+ add new</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
