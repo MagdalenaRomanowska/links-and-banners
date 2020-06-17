@@ -4,6 +4,7 @@
 
 .container-fluid-left-menu {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .container-fluid-right-top {
@@ -14,8 +15,8 @@
   width: 100%;
 }
 
- .row .top {
-   height: 200px;  
+.row .top {
+  height: 200px;
 }
 
 .container-fluid-right-main {
@@ -65,21 +66,25 @@
   .left {
     width: 45%;
   }
+
   .main h1 {
     color: rgb(15, 145, 149);
     font-size: small;
     margin-block-start: 0;
     margin-block-end: 0;
   }
+
   .main h2 {
     color: grey;
     font-size: small;
     margin-block-start: 0;
     margin-block-end: 0;
   }
+
   .link-row {
     max-width: 95%;
   }
+
   .menu-row,
   .links-in-row,
   .manager {
@@ -101,11 +106,13 @@
   .left {
     width: 16.66667%;
   }
+
   .menu-row,
   .links-in-row,
   .manager {
     padding-left: 4px;
   }
+
   .left p {
     font-size: large;
   }
@@ -116,5 +123,11 @@
 
   .left p {
     font-size: 32px;
+  }
+
+  .menu-row,
+  .links-in-row,
+  .manager {
+    padding-left: 48px;
   }
 }
