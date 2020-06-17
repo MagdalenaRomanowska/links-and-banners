@@ -3,6 +3,7 @@
 
 .menu-row {
   display: flex;
+  padding-left: 48px;
 }
 
 .menu-row p {
@@ -33,18 +34,20 @@
 .left {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   float: left;
   background: rgb(70, 70, 70);
   height: 100%;
   width: 16.5%;
 }
 
-.links-in-row:hover {
-  background-color: rgb(58, 58, 58);
-  border-left: 4px solid orange;
-  height: 40px;
+.links-in-row {
+  padding-left: 48px;
 }
+
+.links-in-row:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%,#5f5f5f), color-stop(100%,rgb(104, 104, 104)), color-stop(1%,rgb(255, 139, 31)));
+  }
 
 .left-nav a {
   color: white;
@@ -57,6 +60,9 @@
 }
 
 /* manager */
+.manager {
+  padding-left: 48px;
+}
 
 .manager img {
   max-width: 60px;
@@ -148,9 +154,28 @@
   margin-top: -40px;
 }
 
+.hidden-on-larger-than-phones-part {
+  margin-top: 24px;
+}
+
+.hidden-on-larger-than-phones-part .box {
+  background: rgb(70, 70, 70);
+  border-top: 1px solid grey;
+  text-align: center;
+  min-height: 36px;
+  &.quit {
+    border-bottom: 1px solid grey;
+  }
+}
+
+.hidden-on-larger-than-phones-part .box img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
 /* top menu */
 
-.box {
+.top .box {
   background-color: white;
   border: 1px solid lightgrey;
   text-align: center;
@@ -164,6 +189,11 @@
   padding: 0;
 }
 
+.empty i {
+  float: left;
+  margin: 6px 0 0 24px;
+}
+
 .empty i:hover {
   box-shadow: 0 0 5px 5px rgb(136, 130, 130);
 }
@@ -173,6 +203,7 @@
   flex: 2;
   display: flex;
   justify-content: center;
+  padding: 0 40px;
 }
 
 .money-amount,
@@ -197,6 +228,7 @@
 .notification {
   flex: 1;
   position: relative;
+  padding: 0 12px;
 }
 
 .notification .orange-dot {
@@ -214,6 +246,7 @@
 
 .quit {
   flex: 1;
+  padding: 0 12px;
 }
 
 /* main right */
@@ -343,11 +376,6 @@
 
 .hover:hover {
   box-shadow: 0 0 5px 5px rgb(70, 55, 55);
-}
-
-.text:hover {
-  -webkit-box-shadow: 0 0 6px 2px rgb(197, 197, 197);
-  box-shadow: 0 0 6px 2px rgb(197, 197, 197);
 }
 
 .dates-table h3:hover {

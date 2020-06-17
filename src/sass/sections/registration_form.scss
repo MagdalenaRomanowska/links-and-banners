@@ -7,17 +7,20 @@
 }
 
 .container-fluid-right-top {
-  margin-left: -15px;
-}
-
-.row .top {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 1;
+  width: 100%;
+}
+
+ .row .top {
+   height: 200px;  
 }
 
 .container-fluid-right-main {
   margin: 16px 0;
+  padding-top: 40px;
 }
 
 .hidden-on-phones-part { //top
@@ -58,16 +61,60 @@
 
 @media (max-width: 767px) {
   @include grid('sm');
+
+  .left {
+    width: 45%;
+  }
+  .main h1 {
+    color: rgb(15, 145, 149);
+    font-size: small;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .main h2 {
+    color: grey;
+    font-size: small;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .link-row {
+    max-width: 95%;
+  }
+  .menu-row,
+  .links-in-row,
+  .manager {
+    padding-left: 12px;
+  }
 }
 
 @media (min-width: 768px) {
   @include grid('md');
+
+  .left {
+    width: 45%;
+  }
 }
 
 @media (min-width: 992px) {
   @include grid('lg');
+
+  .left {
+    width: 16.66667%;
+  }
+  .menu-row,
+  .links-in-row,
+  .manager {
+    padding-left: 4px;
+  }
+  .left p {
+    font-size: large;
+  }
 }
 
 @media (min-width: 1200px) {
   @include grid('xl');
+
+  .left p {
+    font-size: 32px;
+  }
 }
