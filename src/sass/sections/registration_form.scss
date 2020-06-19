@@ -101,11 +101,21 @@
     padding-top: 24px;
   }
 
+  .box img,
+  .box .money-amount,
+  .box .profile-name {
+    margin-bottom: 12px;
+
+    &.arrow {
+      padding-top: 4px;
+    }
+  }
+
   .left-nav .links-left-side {
     margin-left: auto;
     margin-right: auto;
 
-    & img {
+    img {
       margin-right: 24px;
     }
   }
@@ -114,35 +124,25 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .box img,
-  .box .money-amount,
-  .box .profile-name {
-    margin-bottom: 12px;
-    &.arrow {
-      padding-top: 4px;
-    }
-  }
 }
 
 @media (min-width: 768px) {   //iPad
   @include grid('md');
 
   .left {
-    width: 33.33333%;
+    width: 33.3333%;
   }
 
-  .general-statistics {
-    
+  .container-fluid-left-menu {
+    width: 50%;
   }
-
 }
 
 @media (min-width: 992px) {
   @include grid('lg');
 
   .left {
-    width: 8.33333%;
+    width: 8.3333%;
   }
 
   .menu-row,
