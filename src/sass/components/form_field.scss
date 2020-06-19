@@ -18,7 +18,7 @@
 .menu-row i {
   font-size: 24px;
   color: lightgrey;
-  padding: 20px 0 0 0;
+  padding: 16px 0 0 0;
 
   &:hover {
     color: orange;
@@ -43,7 +43,7 @@
   float: left;
   background: rgb(70, 70, 70);
   height: 100%;
-  width: 16.5%;
+  width: 8.33333%;
   overflow-y: auto;
 }
 
@@ -61,8 +61,10 @@
   margin: 10px 0;
 }
 
-.links-left-side {
+.last-row {
   border-bottom: 1px solid grey;
+  width: 100%;
+  height: 2px;
 }
 
 /* manager */
@@ -72,7 +74,7 @@
 
 .manager img {
   max-width: 60px;
-  margin-left: 20px;
+  margin-left: 12px;
   border-radius: 50px;
   position: relative;
 }
@@ -139,7 +141,7 @@
 .left-nav .links-left-side img {
   width: 20px;
   height: 20px;
-  margin: 10px 20px 10px 30px;
+  margin: 10px 20px 10px 12px;
   -webkit-filter: invert(1);
   filter: invert(1);
 }
@@ -151,12 +153,12 @@
   background-color: green;
   border-radius: 50px;
   margin-top: -60px;
-  margin-left: 64px;
+  margin-left: 56px;
 }
 
 .manager h5 {
   position: absolute;
-  margin-left: 88px;
+  margin-left: 80px;
   margin-top: -40px;
 }
 
@@ -188,12 +190,12 @@
   text-align: center;
   font-size: 20px;
   color: black;
-  min-height: 36px;
+  min-height: 48px;
 }
 
 .empty {
   flex: 8;
-  padding: 0;
+  padding: 8px 0 0 0;
 }
 
 .empty i:hover {
@@ -205,7 +207,7 @@
   flex: 2;
   display: flex;
   justify-content: center;
-  padding: 0 40px;
+  padding: 12px 40px 0 40px;
 }
 
 .money-amount,
@@ -230,7 +232,7 @@
 .notification {
   flex: 1;
   position: relative;
-  padding: 0 12px;
+  padding: 12px 12px 0 12px;
 }
 
 .notification .orange-dot {
@@ -248,7 +250,7 @@
 
 .quit {
   flex: 1;
-  padding: 0 12px;
+  padding: 12px 24px 0 12px;
 }
 
 /* main right */

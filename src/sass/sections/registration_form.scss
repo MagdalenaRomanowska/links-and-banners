@@ -20,7 +20,7 @@
 }
 
 .container-fluid-right-main {
-  margin: 16px 0;
+  margin: 32px 0;
   padding-top: 40px;
 }
 
@@ -64,7 +64,7 @@
   @include grid('sm');
 
   .left {
-    width: 45%;
+    width: 100%;
   }
 
   .main h1 {
@@ -90,21 +90,59 @@
   .manager {
     padding-left: 12px;
   }
+
+  .menu-row p {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 72px;
+  }
+
+  .menu-row .fa-bars {
+    padding-top: 24px;
+  }
+
+  .left-nav .links-left-side {
+    margin-left: auto;
+    margin-right: auto;
+
+    & img {
+      margin-right: 24px;
+    }
+  }
+
+  .manager {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box img,
+  .box .money-amount,
+  .box .profile-name {
+    margin-bottom: 12px;
+    &.arrow {
+      padding-top: 4px;
+    }
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {   //iPad
   @include grid('md');
 
   .left {
-    width: 45%;
+    width: 33.33333%;
   }
+
+  .general-statistics {
+    
+  }
+
 }
 
 @media (min-width: 992px) {
   @include grid('lg');
 
   .left {
-    width: 16.66667%;
+    width: 8.33333%;
   }
 
   .menu-row,
@@ -122,12 +160,13 @@
   @include grid('xl');
 
   .left p {
-    font-size: 32px;
+    font-size: 24px;
+    padding-left: 8px;
   }
 
   .menu-row,
   .links-in-row,
   .manager {
-    padding-left: 48px;
+    padding-left: 4px;
   }
 }
