@@ -142,17 +142,13 @@
   @include grid('lg');
 
   .left {
-    width: 8.3333%;
+    width: 16.66667%;
   }
 
   .menu-row,
   .links-in-row,
   .manager {
     padding-left: 4px;
-  }
-
-  .left p {
-    font-size: large;
   }
 }
 
@@ -167,6 +163,6 @@
   .menu-row,
   .links-in-row,
   .manager {
-    padding-left: 4px;
+    padding-left: 48px;
   }
 }
